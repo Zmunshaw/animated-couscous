@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./content/app.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="./Scripts/app.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -41,14 +40,15 @@
     </nav>
     <div class="container">
         <h1>LOGIN</h1>
-        <form action="login.html" method="post">
+        <form id="loginForm" action="login.html" method="post">
             <input type="text" placeholder="Enter your username" name="username" required>
             <input type="password" placeholder="Enter your password" name="password" required>
             <div class="login-btn-container">
-                <button type="submit" onclick="validateLogin()" id="loginButton">Login</button>
+                <button type="submit" id="loginButton">Login</button>
             </div>
         </form>
         <p>Don't have an account? <a href="./register.html">Register Here!</a></p>
     </div>
+    <script src="./Scripts/app.js"></script>
 </body>
 </html>

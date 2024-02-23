@@ -27,24 +27,15 @@ let app;
      */
     function Start()
     {
-       
-
-        $("#loginButton").click(validateLogin); 
+        $("#loginForm").submit(validateLogin);
         $("#registerButton").click(validateForm);
-       
-
-
-
-      
-
         Main();
     }
 
 
         function clearForm()
         {
-            //document.getElementById("contactForm").reset();
-            $("#contactForm")[0].reset();
+            $("#registerForm")[0].reset();
         }
 
 
